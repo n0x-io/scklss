@@ -2,7 +2,7 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{"  ", "freememory",	30,		0},
-    {"  ", "batstatus",    30,     0},
+/* Battery not needed on desktop system   {"  ", "batstatus",    30,     0}, */
 	{"", "date '+%b %d %H:%M'",					5,		0},
 };
 
