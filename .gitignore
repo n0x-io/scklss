@@ -1,8 +1,9 @@
 *.tar.gz
 *.o
 dmenu
-dmenu_path
-dmenu_run
 stest
 st
 dwm
+slock
+config.h
+blocks.h
