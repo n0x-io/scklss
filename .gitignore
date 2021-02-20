@@ -1,5 +1,7 @@
 *.tar.gz
 *.o
+*.rej
+*.orig
 dmenu
 stest
 st
