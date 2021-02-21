@@ -1,6 +1,11 @@
 *.tar.gz
 *.o
+*.rej
+*.orig
 dmenu
 stest
 st
 dwm
+slock
+config.h
+blocks.h

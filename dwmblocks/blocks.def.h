@@ -4,6 +4,7 @@ static const Block blocks[] = {
 	{"", "dwmmemory",    10,		0},
     {"", "dwmcpu",       5,         0},
     {"", "dwmnetwork",   5,         0},
+    {"", "dwmnetspeed",  5,         0},
     {"", "dwmdisk",     600,        0},
     /* Battery not needed on desktop system   */
     {"", "dwmbattery",  30,         0},
