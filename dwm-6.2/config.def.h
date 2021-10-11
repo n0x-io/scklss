@@ -30,7 +30,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "爵", "", "", "ﭮ", "ﱘ", "", };
+static const char *tags[] = { "", "ﲵ", "爵", "ﭮ", "ﱘ", "", };
 /*static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 */
 static const Rule rules[] = {
@@ -39,9 +39,10 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	//{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+    { NULL,       NULL,       "Android Emulator - Pixel4_29:5554",       0,            1,           -1 },
     { "zoom",     NULL,       NULL,       0,            1,           -1 },
+    { "Bitwarden",     NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
@@ -75,6 +76,7 @@ static const char *termcmd[]  = { "st", NULL };
 /* Own commands */
 static const char *screenshot[] = { "makescreenshot", NULL };
 static const char *slock[] = { "slock", NULL };
+static const char *pcmanfm[] = { "pcmanfm", NULL };
 
 
 static Key keys[] = {
@@ -107,6 +109,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Up,   setgaps,        {.i = 0 } },
     { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = screenshot } },
     { MODKEY,                       XK_l,      spawn,          {.v = slock } },
+    { MODKEY,                       XK_e,      spawn,          {.v = pcmanfm } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
