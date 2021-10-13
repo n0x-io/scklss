@@ -11,6 +11,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+static const int vertpad            = 8;       /* vertical padding of bar */
+static const int sidepad            = 8;       /* horizontal padding of bar */
 static const char *fonts[]          = { "MesloLGS NF:size=11" };
 static const char dmenufont[]       = "MesloLGS NF:size=11";
 static const char dmenupromt[]      = "Run:";
