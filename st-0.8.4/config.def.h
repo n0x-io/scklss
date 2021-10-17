@@ -6,8 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Hack Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
-/*static char *font = "MesloLGS NF:pixelsize=15:antialias=true:autohint=true";*/
-static int borderpx = 2;
+//static char *font = "LigaMesloLGSNF:pixelsize=15:antialias=true:autohint=true";
+static int borderpx = 30;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -92,7 +92,7 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 0.80;

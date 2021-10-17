@@ -15,8 +15,10 @@ static const int vertpad            = 8;       /* vertical padding of bar */
 static const int sidepad            = 8;       /* horizontal padding of bar */
 static const int horizpadbar        = 2;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 6;        /* vertical padding for statusbar */
-static const char *fonts[]          = { "MesloLGS NF:size=11" };
-static const char dmenufont[]       = "MesloLGS NF:size=11";
+static const char *fonts[]          = { "Hack Nerd Font Mono:size=11" };
+//static const char *fonts[]          = { "MesloLGS NF:size=11" };
+static const char dmenufont[]       = "Hack Nerd Font Mono:size=11";
+//static const char dmenufont[]       = "MesloLGS NF:size=11";
 static const char dmenupromt[]      = "Run:";
 
 /* colors */
