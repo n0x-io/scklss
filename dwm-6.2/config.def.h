@@ -21,6 +21,7 @@ static const char dmenupromt[]      = "Run:";
 
 /* colors */
 static const char col_gray1[]       = "#222222";
+//static const char col_gray1[]       = "#3b4252";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
@@ -32,7 +33,7 @@ static const char *colors[][3]      = {
 };
 
 /* alpha */
-static const unsigned int baralpha = 0xd0;
+static const unsigned int baralpha = 0xa0;
 static const unsigned int borderalpha = OPAQUE;
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
@@ -117,7 +118,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY,                       XK_Up,     setgaps,        {.i = -2 } },
 	{ MODKEY,                       XK_Down,   setgaps,        {.i = +2 } },
-	{ MODKEY|ShiftMask,             XK_Up,   setgaps,        {.i = 0 } },
+	{ MODKEY|ShiftMask,             XK_Up,     setgaps,        {.i = 0 } },
     { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = screenshot } },
     { MODKEY,                       XK_l,      spawn,          {.v = slock } },
     { MODKEY,                       XK_e,      spawn,          {.v = pcmanfm } },
