@@ -16,26 +16,24 @@ static const int sidepad            = 8;       /* horizontal padding of bar */
 static const int horizpadbar        = 2;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 6;        /* vertical padding for statusbar */
 static const char *fonts[]          = { "Hack Nerd Font Mono:size=11" };
-//static const char *fonts[]          = { "MesloLGS NF:size=11" };
 static const char dmenufont[]       = "Hack Nerd Font Mono:size=11";
-//static const char dmenufont[]       = "MesloLGS NF:size=11";
 static const char dmenupromt[]      = "Run:";
 
+
 /* colors */
-static const char col_gray1[]       = "#222222";
-//static const char col_gray1[]       = "#3b4252";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_teal[]        = "#408977";
+static const char col_gray1[]       = "#2E3440"; // #2E3440 #222222
+static const char col_gray2[]       = "#434C5E"; // #434C5E #444444
+static const char col_gray3[]       = "#D8DEE9"; // #D8DEE9 #bbbbbb
+static const char col_gray4[]       = "#ECEFF4"; // #ECEFF4 #EEEEEE
+static const char col_color1[]      = "#8FBCBB"; // #8FBCBB #408977
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] 		= { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  		= { col_gray4, col_teal,  col_teal  },
+	/*                    fg         bg         border   */
+	[SchemeNorm]	= { col_gray3, col_gray1, col_gray2 },
+    [SchemeSel] 	= { col_gray1, col_color1, col_color1  },
 };
 
 /* alpha */
-static const unsigned int baralpha = 0xa0;
+static const unsigned int baralpha = 0xcd;
 static const unsigned int borderalpha = OPAQUE;
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
@@ -53,10 +51,8 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	//{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-    { NULL,       NULL,       "Android Emulator - Pixel4_29:5554",       0,            1,           -1 },
     { "zoom",     NULL,       NULL,       0,            1,           -1 },
-    { "Bitwarden",     NULL,       NULL,       0,            1,           -1 },
+    { "Bitwarden",NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
@@ -84,7 +80,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_teal, "-sf", col_gray4, "-p", dmenupromt, NULL};
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_color1, "-sf", col_gray4, "-p", dmenupromt, NULL};
 static const char *termcmd[]  = { "st", NULL };
 
 /* Own commands */
